@@ -8,7 +8,7 @@ This is an online exam-taking platform built using **React** for the front end. 
 
 ## Live Demo
 
-Check out the live version of the platform here: [Live Demo](#) (Link will be updated)
+Check out the live version of the platform here: https://v-criate-exam-app.vercel.app/
 
 ---
 
@@ -68,8 +68,8 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/neeldholiya04/exam-platform.git
-   cd exam-platform
+   git clone https://github.com/shrimaysomani18/VCriateExamApp.git
+   cd examplatform
    ```
 
 2. **Install Dependencies**:
@@ -91,7 +91,7 @@ Ensure you have the following installed:
 ### Starting the Exam
 
 1. Upon loading the platform, the user is presented with a welcome screen and a "Start Exam" button.
-2. Clicking "Start Exam" switches to full-screen mode, and the exam timer starts.
+2. Clicking "Start Exam" switches to full-screen modeand a pop up appears confirming your decision to start the exam and upon clicking yes the exam timer starts.
 3. Users can answer questions, navigate between them, and submit when done.
 
 ### Navigating Questions
@@ -116,26 +116,6 @@ Ensure you have the following installed:
 
 ---
 
-## Components Breakdown
-
-### 1. **App.js**
-   - The main component managing the overall state of the exam.
-   - Key functions: `handleStartExam()`, `confirmStartExam()`, `calculateScore()`.
-
-### 2. **Exam.js**
-   - Handles the exam interface.
-   - Includes full-screen mode logic, violation handling, and question navigation.
-   - Function `getBackToFullScreen()` monitors and handles full-screen violations.
-
-### 3. **Navbar.js**
-   - Displays the app's title at the top of the exam and results pages.
-
-### 4. **Result.js**
-   - Renders the results page with the user’s score and time taken.
-   - Exits full-screen mode upon loading to show the results.
-
----
-
 ## Customization
 
 - **Question Set**: Modify the questions in `QuestionSet.jsx` in the `assets` folder.
@@ -146,5 +126,5 @@ Ensure you have the following installed:
 
 ## About
 
-Developed by Neel Dholiya, this platform aims to provide a smooth and user-friendly online exam-taking experience with real-time monitoring for enhanced exam integrity.
+Developed by Shrimay Somani, this platform aims to provide a smooth and user-friendly online exam-taking experience with real-time monitoring for enhanced exam integrity.
 
