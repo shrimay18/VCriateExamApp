@@ -1,0 +1,141 @@
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    width:100vw;
+}
+
+.intructions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+    height: 60vh;
+    padding:1em;
+    background-color: aliceblue;
+    border-radius: 25px;
+    overflow-y:auto;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar {
+    width: 15px; 
+    color: black;
+}
+.intructions-heading{
+    display:flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.intructions-content{
+    font-size:1.2em;
+    line-height: 2.2em;
+}
+
+.start-button-container{
+    display: flex;
+    justify-content: end;
+    width:100%;
+}
+.start-button{
+    width:28%;
+    height: 4vh;
+    background-color:rgb(30, 141, 253);
+    color:white;
+    font-size: 1.2em;
+    margin:1em;
+    justify-content: end;
+    border:none;
+}
+
+.start-button:hover{
+    background-color:rgb(42, 120, 198);
+    color:white;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+@media screen and (max-width:1024px){
+    .intructions-heading{
+        font-size: 2em;
+    }
+    .intructions-content{
+        font-size:1em;
+        line-height: 2em;
+    }
+    .start-button{
+        width:35%;
+        height: 4vh;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:768px){
+    .intructions{
+        width: 60vw;
+        height: 40vh;
+    }
+    .intructions-heading{
+        font-size: 1.7em;
+    }
+    .intructions-content{
+        font-size:0.8em;
+        line-height: 1.8em;
+    }
+    .start-button{
+        width:40%;
+        height: 4vh;
+        font-size: 0.8em;
+    }
+    
+}
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+}
+
+.popup-content{
+    width:50vw;
+    height: 30vh;
+    background-color: aliceblue;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.popup-text{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.popup-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.popup-button{
+    width: 20%;
+    height: 4vh;
+    background-color:rgb(30, 141, 253);
+    color:white;
+    font-size: 1.2em;
+    margin:1em;
+    justify-content: end;
+    border:none;
+}
+
+.popup-button:hover{
+    background-color:rgb(42, 120, 198);
+    color:white;
+    cursor: pointer;
+    scale: 1.1;
+}

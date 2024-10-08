@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+Here's the README file for your online exam-taking platform:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Vcriate Exam Platform
 
-In the project directory, you can run:
+This is an online exam-taking platform built using **React** for the front end. The platform allows users to take a multiple-choice question (MCQ) exam in full-screen mode, where users are monitored for violations like exiting full-screen. The exam is automatically terminated if violations exceed a threshold. A countdown timer keeps track of the remaining time, and upon completion, the user’s score report is generated.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the live version of the platform here: [Live Demo](#) (Link will be updated)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Full-Screen Mode**: Users must stay in full-screen mode to take the exam. Exiting triggers a warning or termination.
+- **Violation Detection**: Exiting full-screen triggers a violation warning, with automatic termination after multiple attempts.
+- **Countdown Timer**: The exam has a countdown timer (set to 2 minutes) and auto-submits when time runs out.
+- **Question Navigation**: Navigate between questions with "Previous" and "Next" buttons.
+- **Dynamic Answer Saving**: Answers are dynamically saved as the user selects them.
+- **Score Calculation**: The platform calculates and displays the user's score at the end of the exam.
+- **Exam Reset**: Users can reset the exam during the session.
+- **Results Page**: Displays the score, time left, and exam status.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+src
+│
+├── assets
+│     └── QuestionSet.jsx               # Questions data
+│
+├── components
+│     └── Navbar
+│         ├── navbar.jsx                # Navbar component
+│         └── navbar.css                # Styles for the navbar
+│
+├── pages
+│     ├── Exam
+│     │     ├── exam.jsx                # Main exam component
+│     │     └── exam.css                # Styles for the exam component
+│     ├── Result
+│     │     ├── result.jsx              # Result display after exam completion
+│     │     └── result.css              # Styles for the result page
+│     └── Start
+│           ├── start.jsx               # Starting page component
+│           └── start.css               # Styles for the start page
+│
+├── App.js                              # Main app component
+├── App.css                             # Global styles
+└── index.js                            # Entry point of the application
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ensure you have the following installed:
+- **Node.js** (v14.x or above)
+- **npm** (Node package manager)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/neeldholiya04/exam-platform.git
+   cd exam-platform
+   ```
 
-## Learn More
+2. **Install Dependencies**:
+   Install all required packages:
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Run the Development Server**:
+   Start the server and open the app in your browser:
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Starting the Exam
 
-### Analyzing the Bundle Size
+1. Upon loading the platform, the user is presented with a welcome screen and a "Start Exam" button.
+2. Clicking "Start Exam" switches to full-screen mode, and the exam timer starts.
+3. Users can answer questions, navigate between them, and submit when done.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Navigating Questions
 
-### Making a Progressive Web App
+- Use "Previous" and "Next" buttons to switch between questions.
+- Answers can be changed anytime before submitting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Full-Screen Violations
 
-### Advanced Configuration
+- Exiting full-screen triggers a warning.
+- After a second violation, the exam is terminated automatically.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Submitting the Exam
 
-### Deployment
+- Manually submit the exam via the "Submit" button.
+- The exam is automatically submitted when the timer reaches zero.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Viewing Results
 
-### `npm run build` fails to minify
+- After submission, the score and time left are displayed.
+- Users can restart the exam from the results page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Components Breakdown
+
+### 1. **App.js**
+   - The main component managing the overall state of the exam.
+   - Key functions: `handleStartExam()`, `confirmStartExam()`, `calculateScore()`.
+
+### 2. **Exam.js**
+   - Handles the exam interface.
+   - Includes full-screen mode logic, violation handling, and question navigation.
+   - Function `getBackToFullScreen()` monitors and handles full-screen violations.
+
+### 3. **Navbar.js**
+   - Displays the app's title at the top of the exam and results pages.
+
+### 4. **Result.js**
+   - Renders the results page with the user’s score and time taken.
+   - Exits full-screen mode upon loading to show the results.
+
+---
+
+## Customization
+
+- **Question Set**: Modify the questions in `QuestionSet.jsx` in the `assets` folder.
+- **Timer**: Change the default 2-minute timer by adjusting the `time` state in `exam.jsx`.
+- **Violation Threshold**: The default threshold is 2 violations. You can modify this logic in `exam.jsx` under the `getBackToFullScreen()` function.
+
+---
+
+## About
+
+Developed by Neel Dholiya, this platform aims to provide a smooth and user-friendly online exam-taking experience with real-time monitoring for enhanced exam integrity.
+
