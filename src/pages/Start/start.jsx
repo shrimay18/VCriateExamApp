@@ -48,12 +48,12 @@ function Start() {
                 <div className='intructions-heading'>Instructions</div>
                 <div className='intructions-content'>
                     <ul>
-                        <li>There are 10 questions in this exam.</li>
+                        <li>There are 5 questions in this exam.</li>
                         <li>Each question has 4 options, out of which only 1 is correct.</li>
                         <li>Each question carries 1 mark.</li>
                         <li>There is no negative marking.</li>
-                        <li>Once you start the exam, you can pause it.</li>
-                        <li>Once you submit the exam, you can resume it.</li>
+                        <li>Once you start the exam, you can't pause it, you can reset it</li>
+                        <li>Once you submit the exam, you can restart the exam.</li>
                         <li>If you escape the full screen for once you will get a warning</li>
                         <li>If you escape the fullscreen twice you will be terminated from the exam and awarded a score of zero</li>
                     </ul>
