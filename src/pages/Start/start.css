@@ -106,6 +106,7 @@
     height: 30vh;
     background-color: aliceblue;
     border-radius: 25px;
+    padding:0.75em;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 
