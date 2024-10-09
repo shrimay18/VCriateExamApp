@@ -99,6 +99,7 @@ function Exam() {
         setSelectedOption(Array(Questions.length).fill(null));
         setShowResult(false);
         setTime(120);
+        setShowReset(false); 
     }
 
     if(showReset){
@@ -144,9 +145,9 @@ function Exam() {
                             <button onClick={handleSubmit} className="submit-button">Submit</button> 
                         )}
                     </div>
-                    {/* <div className="reset-button-container">
+                    <div className="reset-button-container">
                         <button className="reset-button" onClick={showResetPopUp}>Reset Exam</button>
-                    </div> */}
+                    </div>
                 </div>:<div className="warning">
                             <div className="warning-text">You have exited the full screen. Please re-enter the full screen to continue the exam ⚠️</div>
                             <button className="get-back-to-full-screen" onClick={getBackToFullScreen}>GO back to FullScreen</button>

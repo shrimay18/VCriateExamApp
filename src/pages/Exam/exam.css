@@ -152,3 +152,73 @@
     width:100vw;
     height: 100vh;
 }
+
+.reset-button-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.reset-button{
+    width:10vw;
+    height:5vh;
+    background-color: #e83b3b;
+    color:white;
+    font-size: 1.2em;
+    border:none;
+}
+
+.reset-button:hover{
+    background-color: #d32f2f;
+    color:white;
+    cursor: pointer;
+}
+
+.reset-popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+}
+
+.reset-popup-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 30vh;
+    background-color: aliceblue;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.reset-popup-text{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin:1em;
+}
+
+.reset-popup-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.reset-popup-button{
+    width: 10vw;
+    height: 5vh;
+    background-color:  rgb(30, 141, 253);
+    color:white;
+    font-size: 1.2em;
+    border:none;
+}
+
+.reset-popup-button:hover{
+    background-color: rgb(42, 120, 198);
+    color:white;
+    cursor: pointer;
+}
