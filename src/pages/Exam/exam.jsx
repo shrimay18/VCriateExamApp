@@ -139,15 +139,15 @@ function Exam() {
                     </div>
                     <div className="button-container">
                         <button onClick={handlePrevious} className="previous-button">Previous</button>
+                        <button className="reset-button" onClick={showResetPopUp}>Reset Exam</button>
                         {currentQuestionIndex < Questions.length - 1 ? (
                             <button onClick={handleNext} className="next-button">Next</button>
                         ) : (
                             <button onClick={handleSubmit} className="submit-button">Submit</button> 
                         )}
                     </div>
-                    <div className="reset-button-container">
-                        <button className="reset-button" onClick={showResetPopUp}>Reset Exam</button>
-                    </div>
+                    {/* <div className="reset-button-container">
+                    </div> */}
                 </div>:<div className="warning">
                             <div className="warning-text">You have exited the full screen. Please re-enter the full screen to continue the exam ⚠️</div>
                             <button className="get-back-to-full-screen" onClick={getBackToFullScreen}>GO back to FullScreen</button>

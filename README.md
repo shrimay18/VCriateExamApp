@@ -69,7 +69,7 @@ Ensure you have the following installed:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/shrimaysomani18/VCriateExamApp.git
-   cd examplatform
+   cd VCriateExamApp
    ```
 
 2. **Install Dependencies**:

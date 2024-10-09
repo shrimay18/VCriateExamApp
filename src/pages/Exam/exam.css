@@ -60,7 +60,7 @@
     width:100%;
 }
 
-.previous-button,.next-button{
+.previous-button,.next-button,.reset-button{
     width: 10vw;
     height: 5vh;
     background-color:rgb(30, 141, 253);
@@ -153,20 +153,15 @@
     height: 100vh;
 }
 
-.reset-button-container{
+/* .reset-button-container{
     display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 1em;
-}
+} */
 
 .reset-button{
-    width:10vw;
-    height:5vh;
     background-color: #e83b3b;
-    color:white;
-    font-size: 1.2em;
-    border:none;
 }
 
 .reset-button:hover{
