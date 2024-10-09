@@ -92,7 +92,7 @@ function Exam() {
     const showResetPopUp = () => {
         setShowReset(true);
     }
-    
+
     const handleReset = () => {
         setCurrentQuestionIndex(0);
         setCorrectAnswers(0);
@@ -144,14 +144,14 @@ function Exam() {
                             <button onClick={handleSubmit} className="submit-button">Submit</button> 
                         )}
                     </div>
+                    {/* <div className="reset-button-container">
+                        <button className="reset-button" onClick={showResetPopUp}>Reset Exam</button>
+                    </div> */}
                 </div>:<div className="warning">
                             <div className="warning-text">You have exited the full screen. Please re-enter the full screen to continue the exam ⚠️</div>
                             <button className="get-back-to-full-screen" onClick={getBackToFullScreen}>GO back to FullScreen</button>
                         </div>
                 }
-                <div className="reset-button-container">
-                    <button className="reset-button" onClick={showResetPopUp}>Reset Exam</button>
-                </div>
             </div>
         </div>
     );
